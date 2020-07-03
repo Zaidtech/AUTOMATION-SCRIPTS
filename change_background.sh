@@ -1,5 +1,7 @@
+# This script in bash changes wallpaper of the system after 30m time interval
+# More work can be done as by fething live wallpapers form the net.
 #!/bin/bash
-while 1>0; do
+while True; do
   for image in *.jpg; do
   #set image as wallpaper
   #echo "----------"
