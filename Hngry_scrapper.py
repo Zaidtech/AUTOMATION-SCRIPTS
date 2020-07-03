@@ -1,3 +1,12 @@
+"""
+This Hungry Scrapper starts scrapping a website to find links and the images..
+The links are diff. as the external ones (not on same page) and internal
+The scrapper jumps from links to links collecting the data (can be more particularized)
+and the images present on the page.
+You never know when you enter the depth on the net ....  : - (
+"""
+
+
 import urllib
 from urllib.request import urlopen
 from bs4 import BeautifulSoup
@@ -72,7 +81,7 @@ def followExternalOnly(startingSite):
     tags = bsObj.find_all('div')
     imgs = bsObj.find_all('img')
 #    specifically for watsAPP  
-    imgs = bsObj.find_all("img",{"class":"_2goTk _1Jdop _3Whw5"})
+# imgs = bsObj.find_all("img",{"class":"_2goTk _1Jdop _3Whw5"})
      
     for tag in tags:
         print(link_internal_external)
@@ -97,6 +106,6 @@ def followExternalOnly(startingSite):
         followExternalOnly(externalLinks[0])
 
 
-url = "https://docs.google.com/forms/d/100pn1VZwpT8adJamJR3gL26iIDYgwYaB2hchU_DT4z4/viewform?edit_requested=true&pli=1"
+url = input("Enter the base Url to start with : ")
 # this is a base url to start with...
 followExternalOnly(url)
