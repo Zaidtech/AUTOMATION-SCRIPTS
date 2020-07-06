@@ -20,8 +20,8 @@ RECIEVER_EMAIL_ID = input("Enter the reciever Email Address")
 smtpObj.login(MY_MAIL_ADDRESS, PASSWORD)
 
 Message = input("Enter the message you want to send")
-for i in range(0,10):
-    smtpObj.sendmail(MY_MAIL_ADDRESS, RECIEVER_EMAIL_ID, f'Subject:\n{Message}')
+
+smtpObj.sendmail(MY_MAIL_ADDRESS, RECIEVER_EMAIL_ID, f'Subject:\n{Message}')
 
 smtpObj.quit()
 
