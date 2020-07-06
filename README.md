@@ -7,4 +7,4 @@ Build With :
 > Bash
 > And Python Libraries
 
-Kindly Use these scripts only for educational purpose.
+Kindly Use these scripts only for educational puppose.
