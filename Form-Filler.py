@@ -2,7 +2,7 @@
 """
 This script has been tested on various custom google forms and other various forms with  
 few alteratios ..
-Google forms which does not include the input type "token"  attribute are found 
+Google forms which does include the input type "token"  attribute are found 
 to be safer than those who don't.
 Any form contains various fields.
 
